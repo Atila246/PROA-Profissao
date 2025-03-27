@@ -1,0 +1,138 @@
+main{
+    width: 90%;
+    height: auto;
+    background-color: rgb(222, 145, 135);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: verdana;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+}
+
+#primeiro_conteudo{
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#primeiro_conteudo div{
+    width: 45%;
+    height: 300px;
+    background-color: rgb(222, 145, 135);
+}
+
+#segundo_conteudo{
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#segundo_conteudo div{
+    width: 20%;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#nada{
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+    background-color: chocolate;
+}
+
+#conteudo_final{
+    width: 100%;
+    height: 350px;
+    margin: 10px 0;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#azul_escuro{
+    width: 40%;
+    height: 300px;
+    background-color: blue;
+}
+
+#azul_claro{
+    width: 40%;
+    height: 300px;
+    background-color: rgb(143, 143, 255);
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+/* ---------------------------- visualização celular ---------------------------- */
+
+@media only screen and (max-width: 480px) {
+    #primeiro_conteudo {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #primeiro_conteudo div {
+        width: 90%;
+        height: 200px;
+        margin: 10px;
+    }
+
+    #segundo_conteudo {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #segundo_conteudo div {
+        width: 30%;
+        height: 150px;
+    }
+
+    #conteudo_final {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+    }
+    
+    #azul_escuro, #azul_claro {
+        width: 90%;
+        height: 180px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #segundo_conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #segundo_conteudo div {
+        width: 40%;
+        height: 150px;
+    }
+}
+
+
