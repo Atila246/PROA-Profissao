@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let nome = prompt("Digite seu nome, pro favor:")
+        let duracao = parseInt(prompt("Qual a duração do evento em horas?"))
+        let garcom = parseInt(prompt("Quantos garçons "))
+        let total = duracao * (garcom * 10.50)
+
+        alert("Custo total: " + total.toFixed(2))
+
+        let confirmacao = prompt("Digite abaixo S para confirmar reserva ou N para cancelar:")
+
+        if (confirmacao = "s"){
+            alert(nome + ", sua reserva foi confirmada e salva com sucesso!")
+        } else if(confirmacao = "n"){
+            alert("Sua reserva foi cancelada.")
+        } else{
+            alert("Resposta inválida, Responda apenas com S ou N.")
+        }
+
+    </script>
+
+</body>
+</html>

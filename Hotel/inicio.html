@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial de um Hotel</title>
+</head>
+<body>
+    
+    <!-- ----------------------Navegação---------------------- -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="reservas.html">Reserva</a>
+            </li>
+            <li>
+                <a href="cadastro.html">Cadastro</a>
+            </li>
+            <li>
+                <a href="eventos.html">Eventos</a>
+            </li>
+            <li>
+                <a href="#">Buffet</a>
+            </li>
+            <li>
+                <a href="#">Auditório</a>
+            </li>
+            <li>
+                <a href="#">Postos</a>
+            </li>
+            <li>
+                <a href="#">Manutenção</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ----------------------JavaScript---------------------- -->
+    <script>
+        // ----------------------Variáveis----------------------
+
+        let nomeHotel = prompt("Qual o nome do hotel?")
+        // alert('Nome do hotel: ${nomeHotel}') -> outra forma exibir na tela sem concatenar
+        alert("Nome do hotel: " + nomeHotel)
+
+        let nomeUsuario = prompt("Qual o nome do usuário")
+        let senhaUsuario = Number(prompt("Qual a senha do usuário?"))
+
+        if(senhaUsuario != 2678){
+            alert("Senha inválida!")
+        } else{
+            alert("Senha correta! Bem-vindo(a) ao " + nomeHotel + ", " + nomeUsuario + "!!")
+        }
+
+    </script>
+
+</body>
+</html>
