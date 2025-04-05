@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média aritmética</title>
+</head>
+<body>
+    
+    <h1>Média aritmética do 15 ao 100</h1>
+    <script>
+
+        let numero1 = 15
+        let numero2 = 100
+        total = 0
+
+        for(i = numero1 + 1; i < numero2; i++){
+            numero1 += i
+            total++
+        }
+        let media = numero1 / total
+        document.write("A média é: " + media.toFixed(1))
+
+    </script>
+
+</body>
+</html>

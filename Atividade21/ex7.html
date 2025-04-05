@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var notas = [];
+        var soma = 0;
+
+        for (var i = 1; i <= 6; i++) {
+            var notaValida = false; //começa false até o usuário digitar uma nota e uma nota q seja válida, aí muda pra true
+
+            while (!notaValida) { //vai continuar esse loop enqt a nota não for válida, no caso enqt o notaValida continuar sendo false
+                var nota = parseFloat(prompt("Digite a nota " + i + " (entre 0 e 10):"));
+
+                if (nota < 0 || nota > 10) { //verifica se a nota é válida antes de ela ser adicionada na lista e passar para a próxima nota
+                    alert("Ops! Parece que você digitou um ou mais valor(es) inválido(s)! Por favor, insira apenas valores entre 0 e 10.");
+                } else {
+                    notaValida = true; //se nada do q foi descrito acima acontecer, o notaValida vira true e sai do loop
+                    notas.push(nota); //qnd sair do loop adiciona a nota na lista
+                    soma += nota; //valor das notas somadas uma a outra
+                }
+            }
+        }
+
+        var media = soma / 6;
+
+        alert("Média final: " + media.toFixed(2));
+
+    </script>
+
+</body>
+
+</html>

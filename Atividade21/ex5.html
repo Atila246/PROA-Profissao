@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media entre números</title>
+</head>
+<body>
+
+    <h1>Fazendo média aritmética entre valores</h1>
+    <script>
+
+        let num1 = parseInt(prompt("Considerando que o primeiro valor deve ser maior que o segundo, digite um número:"))
+        let num2 = parseInt(prompt("Digite outro número:"))
+        let total = 0
+
+        //aqui coloquei o i para estar sempre 1 número a frente do num1
+        for(i = num1 + 1; i < num2; i++){
+            num1 += i //o i tinha q estar a frente do num1 justamente para aqui o num1 ser = a ele mesmo + i (q está um número a frente)
+            total++ //a cada vez que a soma acontece o total aumenta 1, ent ele vai contando as vezes que o processo aconteceu
+        }
+        let media = num1 / total
+        alert("A média dos números é: " + media.toFixed(0))
+    </script>
+
+</body>
+</html>

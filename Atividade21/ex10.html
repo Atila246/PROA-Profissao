@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var num = parseInt(prompt("Digite até qual número deseja gerar as tabuadas:"));
+
+        for (i = 1; i <= num; i++) {
+            document.write("Tabuada " + i + "<br>" + "<br>");
+
+            for (j = 1; j <= 10; j++) {
+                document.write(i + " × " + j + " = " + (i * j) + "<br>");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
